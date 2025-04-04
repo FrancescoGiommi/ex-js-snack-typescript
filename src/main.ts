@@ -15,3 +15,16 @@
     Se è null: stampa “Il dato è vuoto”
     Se è un array: stampa la sua lunghezza
     Se è una Promise: attendi che si risolva e stampa il valore del resolve. */
+
+let dati: unknown;
+
+if (typeof dati === "string") {
+  const valore = dati.toUpperCase();
+  console.log(valore);
+} else if (typeof dati === "number") {
+  console.log(dati * 2);
+} else if (typeof dati === "boolean") {
+  console.log(dati ? "Si" : "No");
+} else {
+  console.log("tipo non supportato");
+}
